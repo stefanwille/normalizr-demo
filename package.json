@@ -1,0 +1,7 @@
+{
+  "name": "normalizr-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Stefan Wille <github@stefanwille.com>",
+  "license": "MIT"
+}
