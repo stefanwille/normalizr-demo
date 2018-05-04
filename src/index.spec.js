@@ -43,9 +43,9 @@ describe("normalizr", () => {
       const nodeInput = ["1"];
       const expected = [
         {
-          articles: [{ id: "1001", subject: "Greatness in Chicken" }],
           id: "1",
-          title: "Chicken"
+          title: "Chicken",
+          articles: [{ id: "1001", subject: "Greatness in Chicken" }]
         }
       ];
       const denormalizedData = denormalize(nodeInput, arrayOfNodes, entities);
