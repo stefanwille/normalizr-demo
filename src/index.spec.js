@@ -65,15 +65,14 @@ describe("normalizr", () => {
           articles: { "1001": { id: "1001", subject: "Greatness in Chicken" } }
         };
 
-        const articleInput = ["1001"];
+        const articleInput = "1001";
         const denormalizedData = denormalize(
           articleInput,
           articleSchema,
           entities
         );
-        const expected = [{ id: "1001", subject: "Greatness in Chicken" }];
-        // no funciona:
-        // expect(denormalizedData).toEqual(expected);
+        const expected = { id: "1001", subject: "Greatness in Chicken" };
+        expect(denormalizedData).toEqual(expected);
       });
     });
 
